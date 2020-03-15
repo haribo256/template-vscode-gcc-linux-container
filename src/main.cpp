@@ -6,32 +6,23 @@
 using namespace std;
 
 void* thread_proc(void* s) {
-    cout << "t1\n";
-    cout << "t1\n";
-    cout << "t1\n";
-    cout << "t1\n";
-    cout << "t1\n";
-    cout << "t1\n";
+    cout << "Thread has fired\n";
     pthread_exit(NULL);
 }
 
 int main() {
-    auto myvar = 5;
+    // Output a simple piece of text.
+    auto helloWorldNumber = 5;
+    cout << "Hello World " << helloWorldNumber << "\n";
 
-    cout << "Hello World " << myvar << "\n";
-
-
+    // Create and run a thread.
     pthread_t t1;
-
     pthread_create(&t1, NULL, thread_proc, NULL);
-
     usleep(1000);
 
+    // Adk the user for a line.
     string line;
-
     getline(cin, line);
-
-    // cout << line << "\n";
     printf("%s\n", line.c_str());
     
     return 0;
