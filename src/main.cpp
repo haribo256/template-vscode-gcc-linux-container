@@ -12,8 +12,8 @@ void* thread_proc(void* s) {
 
 int main() {
     // Output a simple piece of text.
-    auto helloWorldNumber = 5;
-    cout << "Hello World " << helloWorldNumber << "\n";
+    auto helloWorldNumber = 7;
+    cout << "Hello Worgggggggggggggkljkljld " << helloWorldNumber << "\n";
 
     // Create and run a thread.
     pthread_t t1;

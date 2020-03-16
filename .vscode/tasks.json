@@ -4,7 +4,8 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "g++ -g -pthread src/main.cpp -o .bin/main.out",
+            // "command": "g++ -g -pthread src/main.cpp -o .bin/main.out",
+            "command": "cd src && bazel build :main",
             "problemMatcher": ["$gcc"],
             "group": {
                 "isDefault": true,

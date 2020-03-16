@@ -5,7 +5,7 @@
             "name": "Launch",
             "request": "launch",
             "type": "cppdbg",
-            "program": "${workspaceFolder}/.bin/main.out",
+            "program": "${workspaceFolder}/bazel-bin/src/main",
             "args": [],
             "stopAtEntry": false,
             "externalConsole": false,
